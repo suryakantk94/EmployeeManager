@@ -32,7 +32,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h3 class="register-heading">Apply as a Employee</h3>
-                        <form class="form-signin" method="POST" action="/">
+                        <form class="form-signin" method="POST" >
                             {% csrf_token %}
                         <div class="row register-form">
                             <div class="col-md-6">
@@ -104,19 +104,12 @@
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                                 </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                        <option>What is your Birthdate?</option>
-                                        <option>What is Your old Phone Number</option>
-                                        <option>What is your Pet Name?</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="`Answer *" value="" />
                                 </div>
                                 <input type="submit" class="btnRegister"  value="Register"/>
-                                <a href="/login" class="btnRegister"  value="">Login</a>
+                                <a href="/login" class="btnRegister"  value="Login">Login</a>
                             </div>
                         </div>
                     </div>
