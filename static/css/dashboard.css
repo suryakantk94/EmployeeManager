@@ -478,7 +478,7 @@ background-color: rgb(53, 184, 224);
 color: #ffff;
 font-weight: 600; 
 border: 2px solid #008CBA;
-padding: 16px 32px;
+padding: 18px 32px;
 text-align: initial;
 text-decoration: none;
 
@@ -488,7 +488,7 @@ transition-duration: 0.4s;
 cursor: pointer;
 display: block;
 width: -webkit-fill-available;
-
+padding-right: inherit;
 }
 .anchorr {
 background-color: rgb(53, 184, 224); 

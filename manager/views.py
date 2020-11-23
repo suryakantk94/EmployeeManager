@@ -14,11 +14,13 @@ def emp(request):
                 pass
     else:
         form = EmployeeForm()
-    return render(request, "index.html", {'form':form})
+    return render(request, "addemployee.html", {'form':form})
 
 def show(request):
     employees = Employee.objects.all()
     return render(request, "show.html", {'employees':employees})
+
+
 
 def edit(request,id):
     employee = Employee.objects.get(id=id)
@@ -36,6 +38,6 @@ def delete(request,id):
     employee = Employee.objects.get(id=id)
     employee.delete()
     return redirect('/show')
-    from django.shortcuts import render
 
-# Create your views here.
+
+
