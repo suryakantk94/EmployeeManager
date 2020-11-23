@@ -1,8 +1,11 @@
 .register{
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    margin-top: 3%;
+    
     padding: 3%;
+    max-width: inherit;
+    margin-bottom: 0%;
 }
+
 .register-left{
     text-align: center;
     color: #fff;
@@ -60,6 +63,7 @@
     font-weight: 600;
     width: 50%;
     cursor: pointer;
+    margin-right: 89px;
 }
 .register .nav-tabs{
     margin-top: 3%;
