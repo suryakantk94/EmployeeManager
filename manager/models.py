@@ -8,3 +8,5 @@ class Employee(models.Model):
     econtact = models.CharField(max_length=15)
     class Meta:
         db_table = "employeedata" 
+        
+        
