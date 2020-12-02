@@ -9,6 +9,7 @@
     
     </head>
 <body>
+  
   <!-- <a href="/logout">Logout</a> -->
   <div class="grid-container">
     <!-- <div class="menu-icon">
@@ -29,7 +30,7 @@
           <button class="button4" onclick="myFunction()">Personal Details</button>
         </li>
         <li class="sidenav__list-item">
-          <button class="button4" onclick="myFunction1()">Save Employees</button>
+          <button class="button4" onclick="myFunction1()">Save Emp Details</button>
         </li>
         <li class="sidenav__list-item">
           <button class="button4" onclick="myFunction2()">Add New Employee</button>
@@ -48,7 +49,10 @@
     </aside>
     <main class="main1">
       <div class="main-header">
-        <div class="main-header__heading">Hello, {{user.username}}</div>
+        <div class="main-header__heading">Hello, {{user.username}}
+          <!-- <span>Here, you can check the various colleges based on stream and their respective cut-off.
+          </span> -->
+        </div>
         <!-- <div class="main-header__updates">Recent Items</div> -->
       </div>
       <div class="main-cards">
@@ -132,7 +136,7 @@
           <div class="col-md-8">
             <div class="card mb-3">
               <div class="card1-body">
-                
+                <h6 class="titles" class="mb-0"></h6>
                 <a href="/show" class="anchorr" class="btn btn-primary">Delete or Edit Employee Details</a>
               </div>
             </div>
@@ -187,8 +191,8 @@
   
       <div class="main-cards">
         <div class="card">
-          <h6 class="titles" class="mb-0">If you like our work, then please share your feedback.</h6>
-          <a class="anchorr" href="/feedback">Feedback Us</a>
+          <!-- <h6 class="titles" class="mb-0">If you like our work, then please share your feedback.</h6>
+          <a class="anchorr" href="/feedback">Feedback Us</a> -->
         </div>
         <!-- <div class="card">Card</div>
               <div class="card">Card</div> -->
@@ -215,7 +219,7 @@
   
     }
     function myFunction1() {
-      document.getElementById("header").innerHTML = "<span class='header__search'>Your Academic Details</span>";
+      document.getElementById("header").innerHTML = "<span class='header__search'>Save Employees Detail to Excel Sheet</span>";
       document.getElementsByClassName("main5")[0].style.display = 'none';
       document.getElementsByClassName("main6")[0].style.display = 'none';
       document.getElementsByClassName("main1")[0].style.display = 'none';

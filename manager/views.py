@@ -43,7 +43,7 @@ def showinexcel(request):
     columns = ['Employee ID', 'Name', 'Contact', 'Email address', ]
 
     for col_num in range(len(columns)):
-        ws.write(row_num, col_num, columns[col_num], font_style)    
+        ws.write(row_num, col_num, columns[col_num], font_style)    #eg - (0,0, 'Employee ID')
 
     rows = Employee.objects.all().values_list('eid', 'ename', 'econtact', 'eemail')
     for row in rows:
