@@ -5,7 +5,7 @@
     
     <title>Dashboard</title>
     {% load static %}  
-    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard1.css' %}" />
     
     </head>
 <body>
@@ -74,8 +74,8 @@
                       <input class="myInput" value="{{ user.email }}" name="Student2" id="Student2" readonly />
                       <label for="Student3">Password:</label>
                       <input class="myInput" value="{{ user.password }}" name="Student3" id="Student3" readonly />
-                      <label for="Student5">DOB:</label>
-                      <input class="myInput" value="d/m/y" name="Student5" id="Student5" readonly />
+                      <!-- <label for="Student5">DOB:</label>
+                      <input class="myInput" value="d/m/y" name="Student5" id="Student5" readonly /> -->
                       <!-- <button class="button5" onclick="personalfunction(this);" type="button"="regbutton">Update</button> -->
                     </fieldset>
                   </form>
@@ -98,7 +98,8 @@
           <div class="col-md-8">
             <div class="card mb-3">
               <div class="card1-body">
-                
+                <!-- <span>Here, you can check the various colleges based on stream and their respective cut-off.
+          </span> -->
                 <a href="/showinexcel" class="anchorr" class="btn btn-primary">Save Employees Detail in Excel</a>
               </div>
             </div>
