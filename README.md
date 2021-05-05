@@ -2,6 +2,27 @@
 
 _DBMS Project_
 
+## How to install
+
+1. git clone https://github.com/suryakantk94/EmployeeManager.git
+
+2. create virtual environment using virtualenv
+   Commands are as follows:
+   ```bash
+   pip install virtualenv
+   virtualenv venv
+   venv\Scripts\activate
+   ```
+3. Check in command line if virtualenv is activated or not.
+   If activated it will be as follows:
+   ```bash
+   (venv) A:EmployeeManager>
+   ```
+4. Now install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## How to run project
 
 1. Now first connect the project to database.
